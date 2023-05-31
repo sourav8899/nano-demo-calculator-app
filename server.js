@@ -11,7 +11,7 @@ const baseRouter = express.Router();
 app.set('view engine', 'ejs');
 
 baseRouter.get('/greeting', (req, res) => {
-  return res.send('hello world!');
+  return res.status(200).send('hello world!');
 });
 
 baseRouter.post('/add', (req, res) => {
