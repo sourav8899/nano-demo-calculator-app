@@ -12,33 +12,26 @@ app.use(express.json());
 const baseRouter = express.Router();
 app.set("view engine",'ejs');
 
-baseRouter.post('/addition',(req,res)=>{
- res.send("hello");
- res.redirect()
-})
-baseRouter.post('/sub',(req,res)=>{
-    return res.send("hello");
-    });
-baseRouter.post('/mul',(req,res)=>{
-        return res.send("hello");
-        });
-baseRouter.post('/div',(req,res)=>{
-            return res.send("hello");
-            });
-baseRouter.get('',(req,res)=>{
-    return res.render("home");
-});
+
+
 baseRouter.get('/greeting', (req, res) => {
-    return res.send('hello');
+    return res.send('hello world!');
 });
 
 baseRouter.post('/add', (req, res) => {
-    res.json({ "": null });
+    const{num1,num2}=req.body;
+    const result=parseFloat(num1)+parseFloat(num2);
+
+    res.json({ result: null });
 });
 
 
 baseRouter.post('/subtract', (req, res) => {
-    res.json({ "": null });
+    const{num1,num2}=req.body;
+    const result=parseFloat(num1)-parseFloat(num2);
+
+    res.json({ result: null });
+  
 });
 
 app.use(baseUrl, baseRouter);
