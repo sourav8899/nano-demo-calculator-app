@@ -8,7 +8,7 @@ const baseUrl = '/calculator';
 app.use(express.json());
 
 const baseRouter = express.Router();
-app.set('view engine', 'ejs');
+
 
 baseRouter.get('/greeting', (req, res) => {
   return res.status(200).send('hello world!');
