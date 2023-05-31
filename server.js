@@ -15,14 +15,14 @@ baseRouter.get('/greeting', (req, res) => {
 });
 
 baseRouter.post('/add', (req, res) => {
-  const { num1, num2 } = req.body;
+  var { num1, num2 } = req.body;
 
 
   res.status(200).json({ "result":num1+num2 });
 });
 
 baseRouter.post('/subtract', (req, res) => {
-  const { num1, num2 } = req.body;
+  var { num1, num2 } = req.body;
  
 
   res.json({ "result":num1-num2 });
