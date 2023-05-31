@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Document</title>
+</head>
+<style>
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#eabedc;
+      font-size:  10rem;
+        
+    }
+    .form__inside{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color:#eabedc;
+        font-size:  3rem;
+
+    }
+    body{
+        background-color: #170f2d;
+    }
+    .textbox{
+        height: 7rem;
+        background-color:#170f2d ;
+        font-size: 5rem;
+        color: #eabedc;
+        border: none;
+        border-bottom:solid 1px #eabedc;
+    }
+    .textbox:focus{
+        border: solid 5px #eabedc;
+    }
+    .button{
+        margin-top: 2rem;
+        color: #eabedc;
+        background-color: #170f2d;
+        border: none;
+       font-size: 2rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .button__wrapper{
+        display: flex;
+        flex-direction: row;
+            justify-content: space-around;
+    }
+    .button:hover{
+        color: #291b56;
+        background-color: #eabedc;
+        border-radius: 5px;
+    }
+    
+</style>
+<body>
+    <div class="header">
+        Basic Calculator app
+    </div>
+    <div class="form">
+        <form action="" method="POST" >
+        
+            <div class="form__inside">
+            <input type="integer" name="numbers" id="number1" class="textbox">
+           
+            <label for="numbers">Enter the first number</label>
+            <input type="number" name="numbers" id=""class="textbox">
+            <label for="numbers">Enter the second number</label>
+            </div >
+            <div class="button__wrapper">
+            <a class="button" href="/calculator/addition"><i class="uil uil-plus"></i>Addition</button>
+            <a class="button" href="/calculator/sub"><i class="uil uil-minus"></i>Subtraction</button>
+            <a class="button"href="/calculator/mul"><i class="uli uil-multiply"></i>Multiply</button>
+            <a class="button"href="/calculator/div"><i class="uil uil-line-alt"></i>Division</button>
+        </div>
+        </form>
+</body>
+</html>
