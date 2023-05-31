@@ -16,18 +16,16 @@ baseRouter.get('/greeting', (req, res) => {
 
 baseRouter.post('/add', (req, res) => {
   const { num1, num2 } = req.body;
-  
-  const result = num1 + num2;
-  
 
-  res.status(200).json({ result });
+
+  res.status(200).json({ "result":num1+num2 });
 });
 
 baseRouter.post('/subtract', (req, res) => {
   const { num1, num2 } = req.body;
-  const result = num1 - num2;
+ 
 
-  res.json({ result });
+  res.json({ "result":num1-num2 });
 });
 
 app.use(baseUrl, baseRouter);
