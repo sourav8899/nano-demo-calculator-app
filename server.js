@@ -22,7 +22,7 @@ baseRouter.post('/add', (req, res) => {
     const{num1,num2}=req.body;
     const result=parseFloat(num1)+parseFloat(num2);
 
-    res.json({ result: null });
+    res.json({ result});
 });
 
 
@@ -30,7 +30,7 @@ baseRouter.post('/subtract', (req, res) => {
     const{num1,num2}=req.body;
     const result=parseFloat(num1)-parseFloat(num2);
 
-    res.json({ result: null });
+    res.json({ result });
   
 });
 
